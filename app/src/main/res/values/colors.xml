@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_custom_bg">#F1F3F5</color>
+    <color name="dark_blue">#003366</color>
+    <color
+    name="main_dark_blue">#065AAA</color>
+    <color name="accent_blue">#003366</color>
+
+
+</resources>
