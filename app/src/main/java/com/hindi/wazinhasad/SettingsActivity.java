@@ -226,7 +226,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             runOnUiThread(() -> {
                 Toast.makeText(this, "All data has been reset", Toast.LENGTH_SHORT).show();
-                // العودة لشاشة البداية أو الدخول بعد المسح الشامل
+                // العودة لشاشة الرئيسية بعد المسح الشامل
                 Intent intent = new Intent(SettingsActivity.this, DashboardActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
