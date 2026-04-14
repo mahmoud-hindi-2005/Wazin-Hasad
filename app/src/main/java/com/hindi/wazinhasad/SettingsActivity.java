@@ -223,12 +223,11 @@ public class SettingsActivity extends AppCompatActivity {
         Executors.newSingleThreadExecutor().execute(() -> {
             db.clearAllTables();
             preferences.edit().clear().apply();
-            userPreferences.edit().clear().apply(); // مسح بيانات المستخدم أيضاً عند التصفير الشامل
 
             runOnUiThread(() -> {
                 Toast.makeText(this, "All data has been reset", Toast.LENGTH_SHORT).show();
                 // العودة لشاشة البداية أو الدخول بعد المسح الشامل
-                Intent intent = new Intent(SettingsActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SettingsActivity.this, DashboardActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
